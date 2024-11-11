@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend+Deca:wght@100..900&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./build/output.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-top">
+        <div class="first">
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-globe"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z"
+              />
+            </svg>
+            <span>
+              <a href="#">English</a>
+              <i class="fa-solid m-arrow1 ml-1 text-lRed fa-angle-down"></i>
+            </span>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              fill="currentColor"
+              class="bi bi-toggle-off"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5"
+              />
+            </svg>
+            <a href="#">High Contrast</a>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-chat-right-text"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"
+              />
+              <path
+                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+            <a href="#">Customer Support</a>
+          </div>
+          <div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person-fill"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"
+              />
+            </svg>
+            <a href="#">Contact Sales</a>
+          </div>
+        </div>
+        <div class="second"></div>
+      </div>
+      <div class="nav-main"></div>
+    </nav>
+    <div class="introduction">
+      <div class="introduction-box">
+        <div class="introduction-text">
+          <p class="text1">HUBSPOT CUSTOMER PLATFORM</p>
+          <h1 class="text2">Grow better with HubSpot</h1>
+          <p class="text3">
+            Software that's powerful, not overpowering. Seamlessly connect your
+            data, teams, and customers on one AI-powered customer platform that
+            grows with your business.
+          </p>
+          <div class="double-btn">
+            <button class="btn1">
+              <a href="#">Get a demo</a>
+            </button>
+            <button class="btn2">
+              <a href="#">Get started free</a>
+            </button>
+          </div>
+          <p class="text4">
+            Get a demo of our premium software, or get started with free tools.
+          </p>
+        </div>
+        <div class="introduction-image">
+          <img src="/hubspot-assets/hubspot1.webp" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="logos-holder">
+      <div class="logos-text">
+        <h2 class="text1">
+          228,000+ customers in over 135 countries grow their businesses with
+          HubSpot
+        </h2>
+      </div>
+      <div class="logos">
+        <div class="logos-arrows1">
+          <button>
+            <svg
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="logos-box">
+          <img
+            src="/hubspot-assets/ebay-logo.png"
+            alt=""
+           
+          />
+        </div>
+        <div class="logos-box">
+          <img
+            src="/hubspot-assets/doordash-logo.png"
+            alt=""
+           
+          />
+        </div>
+        <div class="logos-box">
+          <img
+            src="/hubspot-assets/reddit-logo-2.png"
+            alt=""
+           
+          />
+        </div>
+        <div class="logos-box">
+          <img
+            src="/hubspot-assets/tripadvisor-logo-2.png"
+            alt=""
+           
+          />
+        </div>
+        <div class="logos-box">
+          <img
+            src="/hubspot-assets/eventbrite-Oct-24-2024-08-17-10-4609-PM.png"
+            alt=""
+
+          />
+        </div>
+        <div class="logos-arrows2">
+          <button>
+            <svg
+              height="30"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 320 512"
+            >
+              <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+              <path
+                d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="hubspot-information">
+      <div class="information-holder">
+        <div class="how">
+          <button class="play">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="100%"
+              height="100%"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+              />
+            </svg>
+          </button>
+          <img src="/hubspot-assets/Homepage Video Thumbnail 1_2x-1.webp" alt="" />
+        </div>
+        <div class="what">
+          <h2 class="text1">What is HubSpot?</h2>
+          <div>
+            <p class="text2">
+              HubSpot is an AI-powered customer platform with all the software,
+              integrations, and resources you need to connect your marketing,
+              sales, and customer service. HubSpot's connected platform enables
+              you to grow your business faster by focusing on what matters most:
+              your customers.
+            </p>
+            <p class="text3">
+              Get a demo to learn about our premium software, or get started
+              with our full suite of free tools and upgrade as you grow.
+            </p>
+          </div>
+          <div class="double-btn2">
+            <button class="btn3">
+              <a href="#">Get a demo</a>
+            </button>
+            <button class="btn4">
+              <a href="#">Get started free</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="platform">
+      <div class="platform-holder">
+        <img src="/hubspot-assets/hubspot2.webp" alt="" />
+        <h2 class="text1">Your whole front office. One customer platform.</h2>
+        <p class="text2">
+          HubSpot brings your marketing, sales, and service teams together on
+          the same AI-powered customer platform. It's easy to use, provides
+          value fast, and gives all teams a unified view of the customer at
+          every stage in their journey. Each product in the platform is powerful
+          on its own, but the real magic happens when you use them together.
+        </p>
+        <div class="double-btn3">
+          <button class="btn5">
+            <a href="#">Get a demo</a>
+          </button>
+          <button class="btn6">
+            <a href="#">Get started free</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="platform-grid-holder">
+      <div class="grid-holder">
+        <div class="grid-container1">
+          <div class="grid-items1">
+            <div class="grid-items1-holder-box">
+              <div class="head">
+                <img
+                  src="/hubspot-assets/MarketingHub_Icon_2023_Gradient_RGB_24px.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  loading="lazy"
+                  class="wf-product-cards__heading--image"
+                />
+                <h3 class="text1">Marketing Hub<sup>®</sup></h3>
+              </div>
+              <span class="text2"
+                >AI-powered marketing software that helps you generate leads and
+                automate marketing.</span
+              >
+              <hr />
+              <h4 class="text3">Popular Features</h4>
+              <div class="features-list">
+                <ul>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Breeze social media agent</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Marketing automation</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Analytics</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="double-btn4">
+                <button class="btn7">
+                  <a href="#">Learn more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-items1">
+            <div class="grid-items1-holder-box">
+              <div class="head">
+                <img
+                  src="/hubspot-assets/SalesHub_Icon_Gradient_RGB_24px.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  loading="lazy"
+                  class="wf-product-cards__heading--image"
+                />
+                <h3 class="text1">Sales Hub<sup>®</sup></h3>
+              </div>
+              <span class="text2"
+                >Easy-to-adopt sales software that leverages AI to build
+                pipelines and close deals.</span
+              >
+              <hr />
+              <h4 class="text3">Popular Features</h4>
+              <div class="features-list">
+                <ul>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Sales workspace</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Deal management</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Breeze prospecting agent</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="double-btn4">
+                <button class="btn7">
+                  <a href="#">Learn more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-items1">
+            <div class="grid-items1-holder-box">
+              <div class="head">
+                <img
+                  src="/hubspot-assets/ServiceHub_Icon_Gradient_RGB_24px.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  loading="lazy"
+                  class="wf-product-cards__heading--image"
+                />
+                <h3 class="text1">Servic Hub<sup>®</sup></h3>
+              </div>
+              <span class="text2"
+                >Customer service software powered by AI to scale support and
+                drive retention.</span
+              >
+
+              <hr />
+              <h4 class="text3">Popular Features</h4>
+              <div class="features-list">
+                <ul>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Omni-channel help desk</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Breeze customer agent</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Customer success workspace</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="double-btn4">
+                <button class="btn7">
+                  <a href="#">Learn more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-items1">
+            <div class="grid-items1-holder-box">
+              <div class="head">
+                <img
+                  src="/hubspot-assets/Product Icon one-1.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  loading="lazy"
+                  class="wf-product-cards__heading--image"
+                />
+                <h3 class="text1">Content Hub<sup class="t-em">TM</sup></h3>
+              </div>
+              <span class="text2">
+                All-in-one, AI-powered content marketing software that helps
+                marketers create and manage content.</span
+              >
+              <hr />
+              <h4 class="text3">Popular Features</h4>
+              <div class="features-list">
+                <ul>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Scalable CMS</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Brand voice</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Breeze content agent</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="double-btn4">
+                <button class="btn7">
+                  <a href="#">Learn more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-items1">
+            <div class="grid-items1-holder-box">
+              <div class="head">
+                <img
+                  src="/hubspot-assets/OperationsHub_Icon_Gradient_RGB_24px.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  loading="lazy"
+                  class="wf-product-cards__heading--image"
+                />
+                <h3 class="text1">Operations Hub<sup>®</sup></h3>
+              </div>
+              <span class="text2"
+                >Operations software that leverages AI to help you activate and
+                manage your data.</span
+              >
+              <hr />
+              <h4 class="text3">Popular Features</h4>
+              <div class="features-list">
+                <ul>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Data sync</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Programmable automation</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>AI-powered data qualify automation</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="double-btn4">
+                <button class="btn7">
+                  <a href="#">Learn more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-items1">
+            <div class="grid-items1-holder-box">
+              <div class="head">
+                <img
+                  src="/hubspot-assets/Product_Icon_Only_CommerceHub.svg"
+                  alt=""
+                  width="30"
+                  height="30"
+                  loading="lazy"
+                  class="wf-product-cards__heading--image"
+                />
+                <h3 class="text1">Commerce Hub<sup class="t-em">TM</sup></h3>
+              </div>
+              <span class="text2"
+                >AI-powered marketing software that helps you generate leads and
+                automate marketing.</span
+              >
+              <hr />
+              <h4 class="text3">Popular Features</h4>
+              <div class="features-list">
+                <ul>
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Invoices & subcriptios</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Quotes</p>
+                  </li>
+
+                  <li>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="18"
+                      height="18"
+                      fill="currentColor"
+                      class="bi bi-check-circle-fill"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"
+                      />
+                    </svg>
+                    <p>Payment links</p>
+                  </li>
+                </ul>
+              </div>
+              <div class="double-btn4">
+                <button class="btn7">
+                  <a href="#">Learn more</a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-items1 item7">
+            <div class="grid-items1-last-holder-box">
+              <div class="first">
+                <h3 class="text1">Small Business Bundle</h3>
+                <p class="text2">
+                  The Starter edition of every HubSpot product, bundled together
+                  at a discounted price for your startup or small business. Find
+                  and reach customers, grow sales and get paid faster, and
+                  organize customer data — all on one unified platform.
+                </p>
+                <div class="double-btn5">
+                  <button class="btn8">
+                    <a href="#">Learn more</a>
+                  </button>
+                </div>
+              </div>
+              <div class="second">
+                <div class="grid-container2">
+                  <div class="grid-items2 one">
+                    <img
+                      src="/hubspot-assets/MarketingHub_Icon_2023_Gradient_RGB_24px.svg"
+                      alt=""
+                      width="65"
+                      height="65"
+                      loading="lazy"
+                      class="wf-product-cards__heading--image"
+                    />
+                    <h3 class="text1">Marketing Hub<sup>®</sup></h3>
+                  </div>
+                  <div class="grid-items2 two">
+                    <img
+                      src="/hubspot-assets/SalesHub_Icon_Gradient_RGB_24px.svg"
+                      alt=""
+                      width="65"
+                      height="65"
+                      loading="lazy"
+                      class="wf-product-cards__heading--image"
+                    />
+                    <h3 class="text1">Sales Hub<sup>®</sup></h3>
+                  </div>
+                  <div class="grid-items2 three">
+                    <img
+                      src="/hubspot-assets/ServiceHub_Icon_Gradient_RGB_24px.svg"
+                      alt=""
+                      width="65"
+                      height="65"
+                      loading="lazy"
+                      class="wf-product-cards__heading--image"
+                    />
+                    <h3 class="text1">Servic Hub<sup>®</sup></h3>
+                  </div>
+                  <div class="grid-items2 four">
+                    <img
+                      src="/hubspot-assets/Product Icon one-1.svg"
+                      alt=""
+                      width="65"
+                      height="65"
+                      loading="lazy"
+                      class="wf-product-cards__heading--image"
+                    />
+                    <h3 class="text1">Content Hub<sup class="t-em">TM</sup></h3>
+                  </div>
+                  <div class="grid-items2 five">
+                    <img
+                      src="/hubspot-assets/OperationsHub_Icon_Gradient_RGB_24px.svg"
+                      alt=""
+                      width="65"
+                      height="65"
+                      loading="lazy"
+                      class="wf-product-cards__heading--image"
+                    />
+                    <h3 class="text1">Operations Hub<sup>®</sup></h3>
+                  </div>
+                  <div class="grid-items2 six">
+                    <img
+                      src="/hubspot-assets/Product_Icon_Only_CommerceHub.svg"
+                      alt=""
+                      width="65"
+                      height="65"
+                      loading="lazy"
+                      class="wf-product-cards__heading--image"
+                    />
+                    <h3 class="text1">
+                      Commerce Hub<sup class="t-em">TM</sup>
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="breeze">
+        <div class="breeze-holder">
+            <div class="head">
+                <h2 class="text1">Product Spotlight: Breeze</h2>
+                <p class="text2">
+                    Use Breeze Copilot to assist with tasks, Breeze Agents to automate your work, Breeze Intelligence to enrich your data, and a growing list of Breeze features to help you get work done faster.
+                </p>
+            </div>
+            <div class="double-btn6">
+                <button class="btn9">
+                  <a href="#">Learn more</a>
+                </button>
+              </div> 
+        </div>
+    </div>
+    <div class="solution">
+        <div class="solution-holder">
+            <h2 class="text1">Solutions for every business</h2>
+            <p class="text2">Growing a business isn’t easy, but we’ve got your back. Explore some of our customers’ top business challenges and </p> 
+            <p class="text2">how HubSpot’s integrated software and solutions can help you leave these problems in the past.</p>
+        </div>
+    </div>
+    <div class="solutions">
+        <div class="solutions-container">
+            <div class="grid-items3">
+                <img src="/hubspot-assets/use-case-1-card-en@2x-1-1.jpeg" alt="" width="100%" height="274">
+                <div class="paragraph">
+                    <h3 class="text1">Generate High-Quality Leads and Maximize Revenue</h3>
+                    <p class="text2">Discover how to use AI-powered marketing tools to attract and convert more leads without multiplying your marketing spend.</p>
+                    <div class="double-btn7">
+                        <button class="btn10">
+                          <a href="#">Learn more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items3">
+                <img src="/hubspot-assets/use-case-2-close-deals (1).webp" alt="" width="100%" height="273">
+                <div class="paragraph">
+                    <h3 class="text1">Accelerate Your Sales and Close More Deals Faster</h3>
+                    <p class="text2">Start closing more deals faster and streamlining your sales process with HubSpot’s AI-powered deal management tools.</p>
+                    <div class="double-btn7">
+                        <button class="btn10">
+                          <a href="#">Learn more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-items3">
+                <img src="/hubspot-assets/Breeze homepage-sm-1.webp" alt="Breeze AI agent creating an email nurturing campaign workflow" width="100%" height="273">
+                <div class="paragraph">
+                    <h3 class="text1">Create Content for Every Stage of the Customer Journey</h3>
+                    <p class="text2">Fuel the entire customer journey with content across formats and channels with all-in-one, AI-powered content marketing software.</p>
+                    <div class="double-btn7">
+                        <button class="btn10">
+                          <a href="#">Learn more</a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="new">
+        <div class="new-holder">
+            <h2 class="header">What’s new at HubSpot</h2>
+            <div class="container">
+                <div class="first">
+                    <button class="play">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="100%"
+                        height="100%"
+                        fill="currentColor"
+                        viewBox="0 0 16 16"
+                      >
+                        <path
+                          d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"
+                        />
+                      </svg>
+                    </button>
+                    <img src="/hubspot-assets/HubSpot-brand-video.jpg" alt="" />
+                </div>
+                <div class="second">
+
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
